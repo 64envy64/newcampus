@@ -249,11 +249,11 @@ padding-top: 30px;
   transform: translateX(-50%);
 }
 .questions-container{
-max-width: 55%;
+width: 80%;
 margin: 0 auto;
 }
 .accordion-text .title {
-font-size: 35px;
+font-size: 2.6rem;
 font-weight: 600;
 color: #100629;
 text-align: center;
@@ -288,7 +288,7 @@ text-align: left;
 transition: all 0.6s ease;
 }
 .d-arrow{
-transition: transform 0.3s ease-in ;
+transition: transform 0.3s ease-in-out ;
 color: #3f3f3f;
 }
 .question p.show{
@@ -302,14 +302,14 @@ transform: rotate(180deg);
 }
 @media (max-width: 700px) {
   .accordion-text .title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .questions-container{
     max-width: 80%;
     margin: 0 auto;
     }
   .question span {
-    font-size: 20px;
+    font-size: 1.2rem;
     }
   .question button {
     padding: 17px 15px;
@@ -377,12 +377,12 @@ opacity: 0;
 /* Mobile responsiveness */
 @media only screen and (max-width: 600px) {
 .preloader h2 {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .preloader {
-    align-items: center; /* Align to the start on mobile */
-    text-align: center; /* Align text to the left on mobile */
+    align-items: center; 
+    text-align: center; 
 }
 }
 
@@ -552,6 +552,7 @@ visibility: visible;
   opacity: 0.25;
   transition: 0.3s;
   }
+  
 .menu nav {
 display: flex;
 flex-direction: column;
@@ -764,13 +765,11 @@ width: 100px; /* Уменьшаем ширину для маленьких эк�
   width: 100%;
   color: #f7f7f7;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 40%;
   text-align: center;
 }
 .text-box h1 {
-  font-size: 115px;
+  font-size: 7.1em;
   color: #ffffff;
   font-weight: 600;
 }
@@ -798,7 +797,7 @@ animation: none;
 
 .text-box p{
   margin: 15px 15px 40px;
-  font-size: 17px;
+  font-size: 1.1em;
   color: #d1d1d1;
 }
 .hero-btn {
@@ -808,7 +807,7 @@ animation: none;
   border: 1px solid #ffffff0e;
   border-radius: 5px;
   padding: 12px 34px;
-  font-size: 14px;
+  font-size: 0.9em;
   background: #514fd5; /* Начальный фон кнопки */
   position: relative;
   cursor: pointer;
@@ -898,16 +897,9 @@ transform: translateY(-5);
     height: 18rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
 .box-container {
-  transform: translateY(0%);
-}
-.box-container .box{
-  margin: 1.5rem;
-  width: 22rem;
-}
-#secondbox {
-  transform: translateY(0);
+  display: none;
 }
 }
 @media (max-width: 1600px) {
@@ -919,16 +911,15 @@ transform: translateY(-5);
     padding-bottom: 30px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 801px) {
 .box-container {
-  transform: translateY(0%);
   display: none;
 }
 .text-box h1 {
-  font-size: 48px;
+  font-size: 3em;
 }
 .text-box p {
-  font-size: 15px;
+  font-size: 0.9em;
 }
 .text-box h1 span {
   font-size: 46px;
@@ -1104,14 +1095,14 @@ transition: .3s ease-in-out;
 /*---- campus ----*/
 
 .campus {
-width: 60%;
+width: 75%;
 margin: auto;
 text-align: center;
-padding-top: 84px;
-font-size: 36px;
+padding-top: 80px;
+font-size: 2.6rem;
 font-weight: 600;
 position: relative;
-overflow: hidden; /* Добавлено для обрезки псевдоэлемента */
+overflow: hidden;
 }
 
 .campus::before {
@@ -1127,11 +1118,10 @@ border-radius: 20px;
 z-index: -1;
 }
 
-/* Остальные стили без изменений */
 .campus h2 {
 position: relative;
 color: #fff;
-font-size: 40px;
+font-size: 2.6rem;
 transition: opacity 3s ease-in-out;
 }
 
@@ -1142,7 +1132,7 @@ color: #d4d4d4;
 .campus h2::before {
 content: "";
 display: block;
-width: 150px;
+width: 110px;
 height: 1px;
 background-color: rgba(253, 253, 253, 0.596);
 position: absolute;
@@ -1197,11 +1187,11 @@ opacity: 1;
 }
 @media screen and (max-width: 1200px) {
 .campus {
-    width: 95%; /* увеличиваем ширину блока на более крупных экранах */
+    width: 95%; 
 }
 
 .campus h2 {
-    font-size: 36px; /* уменьшаем размер заголовка для более крупных экранов */
+    font-size: 2.3rem; 
 }
 
 .campus-col {
@@ -1228,11 +1218,11 @@ opacity: 1;
   top: 0;
   left: 0;
   z-index: -5;
-  background: linear-gradient(rgba(2, 4, 14, 0.418),rgba(2, 4, 14, 0.418)), url('images/background.png') center/cover no-repeat; /* Применяем фоновое изображение */
+  background: linear-gradient(rgba(2, 4, 14, 0.418),rgba(2, 4, 14, 0.418)), url('images/background.png') center/cover no-repeat; 
 }
 
 .cta h1{
-  font-size: 38px;
+  font-size: 2.2em;
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
@@ -1241,7 +1231,7 @@ opacity: 1;
 
 @media (max-width: 1000px){
   .cta h1{
-    font-size: 20px;
+    font-size: 1.5em;
     padding: 5px 5px;
   }
   .cta {
@@ -1251,16 +1241,26 @@ opacity: 1;
 
 @media (max-width: 700px) {
   .cta {
-    padding: 60px 10px; /* Уменьшаем верхний и нижний внутренний отступ */
+    padding: 60px 10px; 
   }
 
   .cta h1 {
-    margin-bottom: 25px; /* Уменьшаем отступ после заголовка */
+    margin-bottom: 25px; 
   }
 
   .hero-btn {
-    font-size: 14px; /* Уменьшаем размер шрифта кнопки */
-    padding: 10px 18px; /* Уменьшаем внутренние отступы кнопки */
+    font-size: 14px; 
+    padding: 10px 18px; 
+  }
+}
+@media (max-width: 400px) {
+  .cta h1 {
+    font-size: 1.2em;
+    font-weight: 550;
+  }
+  .hero-btn {
+    font-size: 0.8em;
+    padding: 10px 15px;
   }
 }
 
@@ -1269,12 +1269,12 @@ opacity: 1;
 .partners {
 text-align: center;
 padding-top: 80px;
-max-width: 70%; /* Устанавливаем максимальную ширину блока */
-margin: 0 auto; /* Центрируем блок по горизонтали */
+max-width: 70%;
+margin: 0 auto; 
 }
 .partners h2 {
   margin: auto;
-  font-size: 40px;
+  font-size: 2.6rem;
   text-align: center;
   color: #100629;
 }
@@ -1318,7 +1318,7 @@ margin: 0 auto; /* Центрируем блок по горизонтали */
 /*--- Gallery ---*/
 
 .wrapper {
-max-width: 55%;
+width: 80%;
 padding-top: 30px;
 margin: 0 auto; 
 position: relative;
@@ -1427,7 +1427,7 @@ right: 0px;
   position: relative;
   margin-top: 100px;
   width: 100%;
-  background: #9055fd;
+  background: #9a6af1;
   min-height: 100px;
   padding: 20px 0px;
   display: flex;
