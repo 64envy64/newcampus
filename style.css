@@ -87,6 +87,15 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
+@media (max-width: 700px) {
+  #back-to-top {
+    width: 44px;
+    height: 44px;
+  }
+  #back-to-top::after {
+    line-height: 44px;
+  }
+}
 body::before {
 content: '';
 position: fixed;
@@ -249,7 +258,7 @@ padding-top: 30px;
   transform: translateX(-50%);
 }
 .questions-container{
-width: 80%;
+width: 75%;
 margin: 0 auto;
 }
 .accordion-text .title {
@@ -931,7 +940,7 @@ transform: translateY(-5);
 /*---- pluses ----*/
 
 .pluses {
-  margin: 5vh 0; /* Отступы сверху и снизу в зависимости от размера экрана */
+  margin: 5vh 0; 
   min-height: 21vh;
   width: 85%;
   margin: 0 auto;
@@ -948,12 +957,12 @@ transform: translateY(-5);
   padding: 20px 0;
   margin-top: 100px;
   margin-bottom: 100px;
-  overflow: hidden; /* Чтобы контент не выходил за границы контейнера */
+  overflow: hidden;
 }
 
 .mission-content {
   max-width: 1000px;
-  width: 90%; /* Ширина контента в процентах */
+  width: 90%; 
   display: flex;
   justify-content: space-between;
   flex-direction: column; /* Добавляем это для мобильных версий */
@@ -1318,7 +1327,7 @@ margin: 0 auto;
 /*--- Gallery ---*/
 
 .wrapper {
-width: 80%;
+width: 75%;
 padding-top: 30px;
 margin: 0 auto; 
 position: relative;

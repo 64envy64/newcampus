@@ -33,7 +33,7 @@ resize: none !important;
 }
 #main{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 .part-1{
   width: 100%;
@@ -104,7 +104,7 @@ resize: none !important;
   width: 100%;
   height: 100vh;
   background-color: #00000000;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 .overlay-div h1{
   opacity: 0;
@@ -122,7 +122,7 @@ resize: none !important;
 }
 
 .scroll-down h3{
-  font-size: 0.7vw;
+  font-size: 1.4vw;
 }
 
 .scroll-p{
@@ -175,7 +175,8 @@ resize: none !important;
   overflow: hidden;
 }
 .text {
-  font-size: 4vw;
+  font-size: 5.5vw;
+  text-align: center;
   letter-spacing: -0.01em;
   line-height: 95%;
   margin: 0px;
@@ -211,7 +212,7 @@ resize: none !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0vw 3vw;
+  padding: 0 3vw;
   position: absolute;
   top: -15vh;
   width: 100%;
@@ -219,7 +220,7 @@ resize: none !important;
 }
 
 .top-part-3 h4{
-  font-size: 3vw;
+  font-size: 3.5vw;
   opacity: 0.5;
 }
 
@@ -234,7 +235,7 @@ resize: none !important;
   justify-content: start;
   flex-direction: column;
   background-color: rgb(0, 0, 0);
-  border-radius: 50px;
+  border-radius: 35px;
   padding: 1.5vw 3vw;
   cursor: pointer;
 }
@@ -288,7 +289,7 @@ resize: none !important;
 }
 
 .lft-part-4 h1{
-  font-size: 8vw;
+  font-size: 9vw;
   padding-bottom: 50px;
 }
 
@@ -311,11 +312,6 @@ resize: none !important;
   margin-top: 25%;
   padding-left: 8vw;
 }
-@media (max-width: 700px) {
-  .text {
-    font-size: 5vw;
-  }
-}
 .content-rght-part-4{
   display: flex;
   flex-direction: column;
@@ -324,7 +320,7 @@ resize: none !important;
 }
 
 .content-rght-part-4 h1{
-  font-size: 3vw;
+  font-size: 4.5vw;
 }
 
 .content-rght-part-4 p{
