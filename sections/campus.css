@@ -33,7 +33,7 @@ resize: none !important;
 }
 #main{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 .part-1{
   width: 100%;
@@ -54,9 +54,9 @@ resize: none !important;
   display: flex;
   align-items: start;
   justify-content: center;
-  gap: 3vw;
-  width: 200vw;
-  height: 200vh;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
   background-color: #000;
   scale: 1;
 }
@@ -64,8 +64,8 @@ resize: none !important;
 .row-div{
   display: flex;
   flex-direction: column;
-  gap: 3vh;
-  width: calc(200vw/5);
+  gap: 2rem;
+  width: calc(150rem/5);
   height: 100%;
 }
 
@@ -104,7 +104,7 @@ resize: none !important;
   width: 100%;
   height: 100vh;
   background-color: #00000000;
-  font-size: 5vw;
+  font-size: 7em;
 }
 .overlay-div h1{
   opacity: 0;
@@ -122,18 +122,18 @@ resize: none !important;
 }
 
 .scroll-down h3{
-  font-size: 0.7vw;
+  font-size: 1rem;
 }
 
 .scroll-p{
-  width: 6vw;
+  width: 6rem;
   height: 2px;
   border-radius: 50px;
   background-color: #ffffff55;
 }
 
 .scrolling{
-  width: 0vw;
+  width: 0%;
   height: 2px;
   border-radius: 50px;
   background-color: #f0f0f0;
@@ -175,7 +175,7 @@ resize: none !important;
   overflow: hidden;
 }
 .text {
-  font-size: 4vw;
+  font-size: 6em;
   letter-spacing: -0.01em;
   line-height: 95%;
   margin: 0px;
@@ -211,7 +211,7 @@ resize: none !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0vw 3vw;
+  padding: 0 3em;
   position: absolute;
   top: -15vh;
   width: 100%;
@@ -219,13 +219,13 @@ resize: none !important;
 }
 
 .top-part-3 h4{
-  font-size: 3vw;
+  font-size: 3em;
   opacity: 0.5;
 }
 
 .cta{
   display: flex;
-  gap: 1vw;
+  gap: 1em;
 }
 
 .cta-book{
@@ -234,8 +234,8 @@ resize: none !important;
   justify-content: start;
   flex-direction: column;
   background-color: rgb(0, 0, 0);
-  border-radius: 50px;
-  padding: 1.5vw 3vw;
+  border-radius: 35px;
+  padding: 1.5em 3em;
   cursor: pointer;
 }
 
@@ -282,13 +282,13 @@ resize: none !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 3vw;
+  padding-left: 6em;
   width: 50%;
   height: 100%;
 }
 
 .lft-part-4 h1{
-  font-size: 8vw;
+  font-size: 9em;
   padding-bottom: 50px;
 }
 
@@ -296,8 +296,8 @@ resize: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7vw;
-  height: 7vw;
+  width: 7em;
+  height: 7em;
   background-color: #f4f4f4;
   border-radius: 50%;
 }
@@ -309,12 +309,7 @@ resize: none !important;
   width: 50%;
   height: 150%;
   margin-top: 25%;
-  padding-left: 8vw;
-}
-@media (max-width: 700px) {
-  .text {
-    font-size: 5vw;
-  }
+  padding-left: 8em;
 }
 .content-rght-part-4{
   display: flex;
@@ -324,11 +319,11 @@ resize: none !important;
 }
 
 .content-rght-part-4 h1{
-  font-size: 3vw;
+  font-size: 4em;
 }
 
 .content-rght-part-4 p{
-  font-size: 1.5vw;
+  font-size: 2.3em;
   width: 75%;
 }
 /* Стили для номера телефона */

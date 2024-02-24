@@ -156,7 +156,22 @@ $(document).ready(function(){
       <div class="text-box">
         <h1>HARMONY OF <span></span></h1>
         <p>Уникальная программа обучения для вашего ребенка<br>Получите качественное международное образование уже сейчас.</p>
-        <a href="" class="hero-btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+        <button class="c-button c-button--gooey"> ПОСТУПИТЬ В ШКОЛУ
+          <div class="c-button__blobs">
+          <div></div>
+          <div></div>
+          <div></div>
+          </div>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
       </div>
   </section>
 
@@ -257,7 +272,7 @@ $(document).ready(function(){
 </div>
 <section class="pluses no-resize">
   <div class="mission-content">
-  <h1>НАШЕ <br>ВИДЕНЬЕ</h1>
+  <h1>НАШЕ <br> ВИДЕНЬЕ</h1>
   <p>Школа подготовки глобальных лидеров будущего, любознательных и социально образованных граждан</p>
   </div>
 </section>
@@ -277,11 +292,27 @@ $(document).ready(function(){
     </section>
   </div>
   </div>
+
 <!---- Enroll -->
 <section class="cta">
   <h1>Получите качественное международное образование уже сейчас</h1>
   <div class="background-img"></div>
-  <a href="" class="hero-btn">ПОСТУПИТЬ В ШКОЛУ</a>
+  <button class="c-button c-button--gooey"> ПОСТУПИТЬ В ШКОЛУ
+    <div class="c-button__blobs">
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+  </button>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+        <feBlend in="SourceGraphic" in2="goo"></feBlend>
+      </filter>
+    </defs>
+  </svg>
 </section>
 <br>
 
@@ -294,16 +325,16 @@ $(document).ready(function(){
     </div>
     <ul class="social-icon">
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/ais_aqbobek/">
-          <ion-icon name="logo-instagram"></ion-icon>
+        <i class="fa-brands fa-instagram"></i>
         </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/ais.aqbobek/">
-          <ion-icon name="logo-facebook"></ion-icon>
+        <i class="fa-brands fa-facebook"></i>
         </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="https://drive.google.com/drive/folders/1BNYBwF-QG-oZWMoh3SlneF3JmntUZdln">
-          <ion-icon name="logo-google"></ion-icon>
+        <i class="fa-brands fa-google"></i>
         </a></li>
       <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@aqbobekinternationalschool4454">
-          <ion-icon name="logo-youtube"></ion-icon>
+        <i class="fa-brands fa-youtube"></i>
         </a></li>
     </ul>
     <ul class="menufoot">
@@ -315,13 +346,11 @@ $(document).ready(function(){
     </ul>
     <p>&copy; 2024 Akbobek International School | Все права защищены</p>
   </footer>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script defer src="assets/landing.js"></script>
   <script src="assets/bcktotoppreloader.js"></script>
-  <script src="assets/scrollrevealelmnts.js" async></script>
+  <script src="assets/scrollrevealelmnts.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" async></script>
 <script defer src="gallery.js"></script>
 <script src="assets/language.js" async></script>
     </body>

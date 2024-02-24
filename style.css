@@ -87,6 +87,15 @@ background-color: #cecece;
 opacity: 1;
 visibility: visible;
 }
+@media (max-width: 700px) {
+  #back-to-top {
+    width: 44px;
+    height: 44px;
+  }
+  #back-to-top::after {
+    line-height: 44px;
+  }
+}
 body::before {
 content: '';
 position: fixed;
@@ -249,7 +258,7 @@ padding-top: 30px;
   transform: translateX(-50%);
 }
 .questions-container{
-width: 80%;
+width: 75%;
 margin: 0 auto;
 }
 .accordion-text .title {
@@ -533,7 +542,8 @@ background: rgba(0, 0, 0, 0.959);
 opacity: 0;
 overflow: hidden;
 visibility: hidden;
-transition: 0.5s;
+transition: 0.4s;
+overflow-y: auto;
 }
 
 body.open .menu {
@@ -552,7 +562,6 @@ visibility: visible;
   opacity: 0.25;
   transition: 0.3s;
   }
-  
 .menu nav {
 display: flex;
 flex-direction: column;
@@ -561,7 +570,7 @@ align-items: flex-start;
 }
 .menu .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   min-width: 160px;
   z-index: 1;
   left: 280px; /* Установите фиксированное расстояние здесь */
@@ -623,9 +632,10 @@ body.open .menu .dropbtn {
   z-index: 1501;
   font-size: 30px;
 }
+/* Добавьте стили для кнопки */
 .dropbtn {
   position: relative;
-  color: white; 
+  color: white; /* Установите цвет текста на белый */
   padding: 16px;
   font-size: 40px;
   border: none;
@@ -640,7 +650,7 @@ body.open .menu .dropbtn {
 }
 .dropdown .fa-chevron-right {
   font-size: 15px;
-  margin-left: 25px; 
+  margin-left: 25px; /* Регулируйте это значение для изменения расстояния стрелки от текста кнопки */
   transition: all 0.3s ease;
 }
 .dropdown:hover .fa-chevron-right,
@@ -649,9 +659,8 @@ body.open .menu .dropbtn {
 }
 @media screen and (max-width: 400px) {
   .dropbtn {
-    font-size: 17px;
+    font-size: 18px;
     margin-left: 2px;
-    padding: 14px;
   }
   .dropdown-content a{
     font-size: 16px;
@@ -765,7 +774,7 @@ width: 100px; /* Уменьшаем ширину для маленьких эк�
   width: 100%;
   color: #f7f7f7;
   position: absolute;
-  top: 40%;
+  top: 35%;
   text-align: center;
 }
 .text-box h1 {
@@ -871,6 +880,73 @@ font-size: 2rem;
 margin: 2rem 0;
 transition: .2s;
 }
+.c-button {
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0.7em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.c-button--gooey {
+  color: #c2c1ff;
+  background-color: #fdfdfd21;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border: 2px solid #514fd5a8;
+  border-radius: 5px;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #514fd5;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 30ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
 .box-container .box:hover i{
 background: #4c35b1;
 }
@@ -931,7 +1007,7 @@ transform: translateY(-5);
 /*---- pluses ----*/
 
 .pluses {
-  margin: 5vh 0; /* Отступы сверху и снизу в зависимости от размера экрана */
+  margin: 5vh 0; 
   min-height: 21vh;
   width: 85%;
   margin: 0 auto;
@@ -948,12 +1024,12 @@ transform: translateY(-5);
   padding: 20px 0;
   margin-top: 100px;
   margin-bottom: 100px;
-  overflow: hidden; /* Чтобы контент не выходил за границы контейнера */
+  overflow: hidden;
 }
 
 .mission-content {
   max-width: 1000px;
-  width: 90%; /* Ширина контента в процентах */
+  width: 90%; 
   display: flex;
   justify-content: space-between;
   flex-direction: column; /* Добавляем это для мобильных версий */
@@ -1318,7 +1394,7 @@ margin: 0 auto;
 /*--- Gallery ---*/
 
 .wrapper {
-width: 80%;
+width: 75%;
 padding-top: 30px;
 margin: 0 auto; 
 position: relative;
@@ -1455,7 +1531,7 @@ right: 0px;
 }
 
 .social-icon__link {
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: #fff;
   margin: 20px 15px 0 0;
   display: inline-block;
