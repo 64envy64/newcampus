@@ -104,11 +104,7 @@ resize: none !important;
   width: 100%;
   height: 100vh;
   background-color: #00000000;
-<<<<<<< HEAD
   font-size: 7em;
-=======
-  font-size: 6vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
 }
 .overlay-div h1{
   opacity: 0;
@@ -126,11 +122,7 @@ resize: none !important;
 }
 
 .scroll-down h3{
-<<<<<<< HEAD
   font-size: 1rem;
-=======
-  font-size: 1.4vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
 }
 
 .scroll-p{
@@ -183,12 +175,7 @@ resize: none !important;
   overflow: hidden;
 }
 .text {
-<<<<<<< HEAD
   font-size: 6em;
-=======
-  font-size: 5.5vw;
-  text-align: center;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
   letter-spacing: -0.01em;
   line-height: 95%;
   margin: 0px;
@@ -224,11 +211,7 @@ resize: none !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
   padding: 0 3em;
-=======
-  padding: 0 3vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
   position: absolute;
   top: -15vh;
   width: 100%;
@@ -236,11 +219,7 @@ resize: none !important;
 }
 
 .top-part-3 h4{
-<<<<<<< HEAD
   font-size: 3em;
-=======
-  font-size: 3.5vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
   opacity: 0.5;
 }
 
@@ -256,11 +235,7 @@ resize: none !important;
   flex-direction: column;
   background-color: rgb(0, 0, 0);
   border-radius: 35px;
-<<<<<<< HEAD
   padding: 1.5em 3em;
-=======
-  padding: 1.5vw 3vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
   cursor: pointer;
 }
 
@@ -313,11 +288,7 @@ resize: none !important;
 }
 
 .lft-part-4 h1{
-<<<<<<< HEAD
   font-size: 9em;
-=======
-  font-size: 9vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
   padding-bottom: 50px;
 }
 
@@ -338,11 +309,7 @@ resize: none !important;
   width: 50%;
   height: 150%;
   margin-top: 25%;
-<<<<<<< HEAD
   padding-left: 8em;
-=======
-  padding-left: 8vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
 }
 .content-rght-part-4{
   display: flex;
@@ -352,11 +319,7 @@ resize: none !important;
 }
 
 .content-rght-part-4 h1{
-<<<<<<< HEAD
   font-size: 4em;
-=======
-  font-size: 4.5vw;
->>>>>>> 0f543bde7fd516b18c9e41af685bfb97a7da506d
 }
 
 .content-rght-part-4 p{
