@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-      <script src="https://unpkg.com/rellax@1.12.1/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Preloader -->
         <div class="preloader">
@@ -214,25 +213,6 @@ $(document).click(function(){
       <button id="prev"><</button>
       <button id="next">></button>
   </div>
-  <!-- thumbnail -->
-  <div class="thumbnail">
-      <div class="item active">
-          <img src="image/img1.png" loading="lazy">
-      </div>
-      <div class="item">
-          <img src="image/img2.jpg" loading="lazy">
-      </div>
-      <div class="item">
-          <img src="image/img3.jpg" loading="lazy">
-      </div>
-      <div class="item">
-          <img src="image/img4.jpg" loading="lazy">
-      </div>
-      <div class="item">
-          <img src="image/img5.jpg" loading="lazy">
-      </div>
-  </div>
-</div>
 </section>
 
 <section class="numbers">
@@ -243,21 +223,13 @@ $(document).click(function(){
   </div>
   </section>
 
-  <div class="prlx" data-rellax-speed="-3"><img src='https://images.unsplash.com/photo-1583144584182-1717fab24b1e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #1</span></div>
-  <div class="prlx" data-rellax-speed="-2"><img src='https://images.unsplash.com/photo-1580637592264-9024a17b9bd8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #2</span></div>
-  <div class="prlx" data-rellax-speed="5"><img src='https://images.unsplash.com/photo-1547823065-4cbbb2d4d185?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #3</span></div>
-  <div class="prlx" data-rellax-speed="1"><img src='https://images.unsplash.com/photo-1583144584182-1717fab24b1e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #4</span></div>
-  <div class="prlx" data-rellax-speed="2"><img src='https://images.unsplash.com/photo-1571096892464-eee432a6f965?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #5</span></div>
-  <div class="prlx" data-rellax-speed="3"><img src='https://images.unsplash.com/photo-1552375769-21180344ce63?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #6</span></div>
-  <script>
-    var rellax = new Rellax('.prlx', {
-        center: true,
-        wrapper: null,
-        round: true,
-        vertical: true,
-        horizontal: false
-    });
-</script>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1583144584182-1717fab24b1e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #1</span></div>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1580637592264-9024a17b9bd8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #2</span></div>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1547823065-4cbbb2d4d185?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #3</span></div>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1583144584182-1717fab24b1e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #4</span></div>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1571096892464-eee432a6f965?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #5</span></div>
+<div class="prlx"><img src='https://images.unsplash.com/photo-1552375769-21180344ce63?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''><span class="legende">image #6</span></div>
+
   <section class="home container" id="home">
     <div class="home-text">
         <h1>Find Your Next <br>Perfect Place To <br> Live.</h1>
